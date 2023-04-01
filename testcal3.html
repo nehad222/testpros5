@@ -1,0 +1,326 @@
+<html>
+<head>
+<title>calculator</title>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+<style>
+    
+    body{
+    background-color: hsl(222, 26%, 31%);}       
+
+        
+        c{
+            font-size:23px;
+            font-family: 'League Spartan', sans-serif;
+            color: white;
+            position: absolute;
+            left: 35%;
+            top:70px;
+            margin-left: 5px;
+        }
+
+    k{
+    width:356px;
+    height: 120px;
+    position: absolute;
+    left:35%;
+    border:solid 1px hsl(224, 36%, 15%);
+        background-color:  hsl(224, 36%, 15%);
+        border-radius: 10px;
+        top:90px;
+        margin-top: 30px; 
+        
+    }
+    l{
+        width:356;
+        height: 280px;
+        position: absolute;
+        left: 35%;
+        border:solid 1px hsl(223, 31%, 20%);
+        background-color: hsl(223, 31%, 20%);
+        top:270px;
+        border-radius: 10px
+    }
+    #button{
+        position: absolute;
+        width:69px;
+        height: 38px;
+        font-size:30px;
+        font-family: 'League Spartan', sans-serif;
+        background-color:  hsl(30, 25%, 89%);
+        color:hsl(221, 14%, 31%);
+        padding: center;
+        padding-top: 5px;
+        border:solid 1px  hsl(30, 25%, 89%);
+        border-radius: 5px;
+    box-shadow:  hsl(28, 16%, 65%);
+    
+        
+    }
+    .number7{
+        
+        margin-left:20px;
+        top:18px;
+    }
+     .number4{
+        margin-left: 20px;
+        top:68px;
+        
+    }
+    .number1{
+        margin-left: 20px;
+        top:118px;
+    }
+    .point{
+        margin-left:20px;
+        top:168px;
+    }
+    .number8{
+        top:18px;
+        left:102px;
+    }
+    .number9{
+        top:18px;
+        left:184px;
+    }
+    #del{
+         position: absolute;
+        width:69px;
+        height: 38px;
+        font-size:22px;
+        font-family: 'League Spartan', sans-serif;
+        padding: center;
+        padding-top: 5px;
+        border-radius: 5px;
+        top:18px;
+       
+        background-color: hsl(225, 21%, 49%);
+        color: hsl(0, 0%, 100%);
+        box-shadow: hsl(224, 28%, 35%);
+        border:solid 1px hsl(225, 21%, 49%);
+    }
+    .number5{
+        top:68px;
+    left:102px;
+    }
+    .number6{
+        top:68px;
+       left:184px;
+    }
+    .number2{
+        
+    top:118px;
+     left:102px;
+
+    }
+    .number3{
+     top:118px;
+       left:184px;
+
+    }
+    .number0{
+                top:168px;
+     left:102px;
+
+        
+    }
+    .operation1{
+                top:68px;
+               
+    }
+    .operation2{
+                top:118px;
+               
+
+    }
+    .operation3{
+        left:184px;
+        top:168px;
+
+    }
+    .operation4{
+       
+        top:168px;
+
+    }
+    .operation1,.operation2,.operation4,#del{
+        left: 267px;
+    }
+       #buttonbig{
+        position: absolute;
+        width:150px;
+        height: 38px;
+        font-size:22px;
+        font-family: 'League Spartan', sans-serif;
+        color:hsl(0, 0%, 100%);
+        padding: center;
+        padding-top: 5px;
+        border-radius: 5px;
+        color: hsl(0, 0%, 100%);
+
+    }
+    .reset{
+        margin-left:20px;
+        bottom: 18px;
+        background-color: hsl(225, 21%, 49%);
+        box-shadow: hsl(224, 28%, 35%);
+        border:solid 1px hsl(225, 21%, 49%);
+    }
+    .result{
+        margin-left:  186px;
+        bottom: 18px;
+        background-color: hsl(6, 63%, 50%);
+        box-shadow: hsl(6, 70%, 34%);
+        border:solid 1px hsl(6, 63%, 50%);
+        
+    }
+   
+    #ko{position: absolute;
+        font-size: 32px;
+        color:hsl(0, 0%, 100%);
+        margin-top:40px;
+        right: 2px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        font-family: 'League Spartan', sans-serif;
+        
+
+    }
+    @media screen and (max-width:600px)
+    {
+        c{  top:140px; 
+            font-size:35px;
+            left: 20%;
+            
+        }
+        
+        k{top:180px;
+            height: 200px;
+            width:300px;
+            left:20%;
+            
+        }
+        l{ top:540px;
+            height: 500px;
+            width:300px;
+        left:20%;
+            
+        }
+        .number7,.number4,.number1,.point,.reset{
+            margin-left: 10px;
+            
+        }
+         .operation1,.operation2,.operation4,#del{
+        left:227px;
+    }
+        .result{
+            left:-30px;
+        }
+        
+        
+        #button,#del { height: 70px;
+            width:60px;
+        }
+        #buttonbig{
+            height: 70px;
+            width:135px;
+        }
+        .number8,.number2,.number5,.number0{
+            left: 82px;
+        }
+        .number3,.number6,.number9,.operation3{
+            left:155px;
+        }
+        
+        #ko{
+            font-size:27px;
+        }
+        .operation4,.operation3,.number0,.point{
+            top:310px;
+        }
+        .operation2,.number1,.number2,.number3{
+            top:210px;
+        }
+        .operation1,.number4,.number5,.number6{
+            top:113px;
+            
+        }
+        
+        
+    }
+    
+</style>
+</head>
+<body>
+<c >calc</c>
+<k >
+<kk id="ko">
+</kk>    
+</k>   
+<l>
+    <button class="number7" id="button" onclick="display('7');">7</button>
+   <button class="number4" id="button" onclick="display('4');">4</button>
+    <button class="number1" id="button" onclick="display('1');">1</button>
+    <button class="point" id="button" onclick="display('.');">.</button>
+    <button class="number8" id="button" onclick="display('8');">8</button>
+   <button class="number9" id="button" onclick="display('9');">9</button>
+  <button  id="del" onclick="del();" >DEL</button>
+   <button class="number5" id="button" onclick="display('5');">5</button>
+   <button class="number6" id="button" onclick="display('6');">6</button>
+   <button class="number2" id="button" onclick="display('2');">2</button>
+ <button class="number3" id="button"onclick="display('3');">3</button>
+<button class="operation1" id="button" onclick="display('+');">+</button>
+       <button class="operation2" id="button" onclick="display('-');">-</button>
+   <button class="operation3" id="button" onclick="display('/');">/</button>
+       <button class="operation4" id="button" onclick="display('*');">x</button>
+   <button class="number0" id="button" onclick="display('0');">0</button>
+   <button  id="buttonbig" class="reset" onclick="reset();" >RESET</button>
+   <button  id="buttonbig" class="result" onclick="calc();">=</button>
+</l>
+     <script>
+var x=0;       
+
+function display(num){
+    
+    window.ko.innerHTML += num;
+    x+=1;
+    if(x>=20)
+        { 
+            
+window.ko.innerHTML = window.ko.innerHTML.slice(0,-1);
+        }
+   
+  
+   
+}
+         function reset(){
+            window.ko.innerHTML = "";
+             x=0;
+}
+   function del(){
+        window.ko.innerHTML =  window.ko.innerHTML.slice(0,-1);
+       x-=1;
+   }
+        function calc(){
+         x=window.ko.innerHTML.length;
+            if(x>=20)
+                {
+                   window.ko.innerHTML = window.ko.innerHTML.slice(0,-1);
+                }
+            
+            try{
+                window.ko.innerHTML =  eval( window.ko.innerHTML );
+              
+            }
+            catch(err)
+                {
+                     window.ko.innerHTML = "error";
+                }
+            
+           
+            
+        }
+    </script>
+</body>
+</html>
